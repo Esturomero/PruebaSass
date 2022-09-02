@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-color: bisque;
+  height: 20vh; }
+  header li {
+    list-style: none;
+    text-align: center; }
+
+.main-index {
+  background-color: burlywood;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column; }
+  .main-index .card {
+    max-width: 350px;
+    margin: 0 auto; }
+    .main-index .card h2 {
+      font-family: sans-serif; }
+      .main-index .card h2:hover {
+        color: #d0ff7f;
+        background-color: black; }
+
+@media (min-width: 550px) {
+  .main-index {
+    flex-direction: row; }
+    .main-index .card h2:hover {
+      background-color: aquamarine; } }
+
+footer form input {
+  padding: 15px; }
+  footer form input:focus {
+    background-color: cadetblue; }
+    footer form input:focus::placeholder {
+      color: white; }
