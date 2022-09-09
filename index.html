@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Clase Sass I</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <meta name="keywords" content="Furnarius, gaming, multigaming, juegos">
+  <meta name="desciption" content="Furnarius es la nueva multigaming emergente de la escena">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Inicio</title>
 </head>
+
 <body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li>barra de navegacion</li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-index">
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/Logo texto.png" alt="LogoDeNav" width="auto" height="50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/redes.html">Redes</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./pages/nosotros.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#./pages/nosotros.html">Historia</a></li>
+                <li><a class="dropdown-item" href="./pages/nosotros.html">CEO</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./pages/nosotros.html">Staff</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main-index">
     <div class="card">
-        <h2>un titulo</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus voluptatum, temporibus eum voluptatem voluptatibus.
-        </p>
-        <button>VER MAS</button>
+      <h2>un titulo</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus voluptatum, temporibus eum
+        voluptatem voluptatibus.
+      </p>
+      <button>VER MAS</button>
 
     </div>
     <div class="card">
-        <h2>un titulo</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus voluptatum, temporibus eum voluptatem voluptatibus.
-        </p>
-        <button>VER MAS</button>
+      <h2>un titulo</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus voluptatum, temporibus eum
+        voluptatem voluptatibus.
+      </p>
+      <button>VER MAS</button>
 
     </div>
     <div class="card">
-        <h2>un titulo</h2>
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus voluptatum, temporibus eum voluptatem voluptatibus.
-        </p>
-        <button>VER MAS</button>
+      <h2>un titulo</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum necessitatibus voluptatum, temporibus eum
+        voluptatem voluptatibus.
+      </p>
+      <button>VER MAS</button>
 
     </div>
-    </main>
-    <footer>
-      <form action="">
-        <input type="text" placeholder="Nombre y apellido">
-        <input type="Email" placeholder="Email">
-        <input type="submit" >
-      </form>
-    </footer>
+  </main>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="../index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img class="bi" width="30" height="24" src="../images/Logo.png" alt="LogoFooter">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/FurnariusE"><img src="./images/twitter.png"
+            width="24" height="24">
+          <use xlink:href="#twitter"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/furnarius_esports/?hl=es"><img
+            src="./images/instagram.jfif" width="24" height="24">
+          <use xlink:href="#instagram"></use></svg>
+        </a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.twitch.tv/furnarius_esports?lang=es"><img
+            src="./images/twich.png" width="24" height="24">
+          <use xlink:href="#facebook"></use></svg>
+        </a></li>
+    </ul>
+  </footer>
 </body>
+
 </html>

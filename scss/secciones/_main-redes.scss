@@ -1,0 +1,67 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 15vh 25vh 25vh 25vh 10vh;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header"
+        "youtube youtube texto-youtube texto-youtube"
+        "texto-instagram texto-instagram  instagram instagram"
+        "twitter twitter texto-twitter texto-twitter"
+        "footer footer footer footer";
+}
+
+.youtube {
+    grid-area: youtube;
+    background-color: rgb(0, 255, 8);
+}
+
+.instagram {
+    grid-area: instagram;
+    background-color: rgb(17, 0, 255);
+}
+
+.texto-youtube {
+    grid-area: texto-youtube;
+    background-color: rgb(255, 0, 225);
+}
+
+.texto-instagram {
+    grid-area: texto-instagram;
+    background-color: rgb(221, 255, 0);
+}
+
+.twitter {
+    grid-area: twitter;
+    background-color: rgb(85, 0, 255);
+}
+
+.texto-twitter {
+    grid-area: texto-twitter;
+    background-color: rgb(149, 255, 0);
+}
+
+
+@media (min-width:768px) {
+
+    .grid-container {
+        grid-template-areas:
+            "header header header header"
+            "texto-youtube texto-youtube youtube youtube"
+            "texto-instagram texto-instagram  instagram instagram"
+            "texto-twitter texto-twitter twitter twitter"
+            "footer footer footer footer";
+    }
+
+
+
+    @media(min-width:1024px) {
+
+        .grid-container {
+            grid-template-areas:
+                "header header header header"
+                "youtube texto-youtube texto-youtube texto-youtube"
+                "texto-instagram texto-instagram  texto-instagram instagram"
+                "twitter texto-twitter texto-twitter texto-twitter"
+                "footer footer footer footer";
+        }
